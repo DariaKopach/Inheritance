@@ -52,8 +52,8 @@ public class Rhombus extends Parallelogram {
     @Override
     public String toString() {
         return "Rhombus {" +
-                "side=" + side +
-                ", angle=" + angle +
+                "side = " + side +
+                ", angle = " + angle +
                 ",\n Perimeter = " + this.getPerimeter() +
                 ",\n Area = " + this.getArea() +
                 ",\n Short Diagonal = " + this.getShortDiagonal() +

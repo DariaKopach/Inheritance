@@ -16,7 +16,7 @@ public class Parallelogram {
 
     private int smallSide;
     private int bigSide;
-    private double Angle;
+    private double angle;
 
     // 1. Constructor:
     // a) generate an empty constructor
@@ -30,7 +30,7 @@ public class Parallelogram {
     public Parallelogram(int smallside, int bigside, double angle) {
         this.smallSide = smallside;
         this.bigSide = bigside;
-        this.Angle = angle;
+        this.angle = angle;
     }
 
     // 2. Generate getters and setters
@@ -52,11 +52,11 @@ public class Parallelogram {
     }
 
     public double getAngle() {
-        return Angle;
+        return angle;
     }
 
     public void setAngle(double angle) {
-        Angle = angle;
+        angle = angle;
     }
 
 
@@ -105,7 +105,7 @@ public class Parallelogram {
         return "Parallelogram { " +
                 "smallSide = " + smallSide +
                 ", bigSide = " + bigSide +
-                ", Angle = " + Angle +
+                ", Angle = " + angle +
                 ",\n Perimeter = " + this.getPerimeter() +
                 ",\n Area = " + this.getArea() +
                 ",\n Short Diagonal = " + this.getShortDiagonal() +
@@ -123,11 +123,11 @@ public class Parallelogram {
         Parallelogram that = (Parallelogram) o;
         return smallSide == that.smallSide &&
                 bigSide == that.bigSide &&
-                Double.compare(that.Angle, Angle) == 0;
+                Double.compare(that.angle, angle) == 0;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(smallSide, bigSide, Angle);
+        return Objects.hash(smallSide, bigSide, angle);
     }
 }
